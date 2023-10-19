@@ -242,6 +242,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &626196362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626196352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59a30514a18fb94ba9b7f7398405b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectHealth: 0
+  Maxhealth: 50
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.55885535, y: -0.21110135, z: 0.14974481, w: 0.787841}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 81.8, y: 3, z: 47.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -365,6 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d754e12f181bd624194bac6b8caa0402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickDamage: 0
 --- !u!4 &736306877
 Transform:
   m_ObjectHideFlags: 0
@@ -401,6 +416,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &793100422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793100412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59a30514a18fb94ba9b7f7398405b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectHealth: 0
+  Maxhealth: 25
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +535,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1176113971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176113961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59a30514a18fb94ba9b7f7398405b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectHealth: 0
+  Maxhealth: 100
 --- !u!1001 &5923052172047823156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -580,7 +623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9214892108791596924, guid: 8b12efb61dcc7b14ca679019934aa5b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.968
+      value: -1.94
       objectReference: {fileID: 0}
     - target: {fileID: 9214892108791596924, guid: 8b12efb61dcc7b14ca679019934aa5b7, type: 3}
       propertyPath: m_LocalPosition.y

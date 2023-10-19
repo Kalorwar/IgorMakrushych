@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-   
 
-    
+    [SerializeField] public float clickDamage;
+
     void Update()
     {
      
@@ -16,7 +16,11 @@ public class PlayerController : MonoBehaviour
 
             if(Physics.Raycast(ray, out RaycastHit hit, 1000))
             {
+
                 GameObject go = hit.collider.gameObject;
+
+               // Health health = gameObject.GetComponent<Health>();
+                //health.objectHealth -= clickDamage;
 
                 if (go != null)
                 {
@@ -29,15 +33,14 @@ public class PlayerController : MonoBehaviour
                     {
                         rb.velocity = Vector3.up * 10;
                     }
-                
-                
+
+
+
                 }
+
             }
 
         }
-
-
-
-
+     
     }
 }
