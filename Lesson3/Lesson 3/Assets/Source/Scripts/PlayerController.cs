@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour
 
                 GameObject go = hit.collider.gameObject;
 
-               // Health health = gameObject.GetComponent<Health>();
-                //health.objectHealth -= clickDamage;
+                Health health = go.GetComponent<Health>();
+                health.objectHealth -= clickDamage;
 
                 if (go != null)
                 {
