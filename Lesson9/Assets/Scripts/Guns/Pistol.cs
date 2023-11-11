@@ -4,6 +4,10 @@ public class Pistol : Gun
 {
     public override void Shoot()
     {
-        Debug.Log("Пистолет");
+      CanShoot = false;
+      Bullet bulletCreated = Instantiate(_bullet, _spawnPoint.position, Quaternion.identity).GetComponent<Bullet>();
+      bulletCreated.Fly(_spawnPoint.transform.forward, 100);
+      Ammo--;
+      //DestroyBullets();
     }
 }
