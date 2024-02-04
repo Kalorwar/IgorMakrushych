@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-[RequireComponent(typeof(EnemyFacrica))]
+[RequireComponent(typeof(EnemyFabrica))]
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private List<EnemyType> _meleeEnemy;
@@ -12,12 +12,12 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float _delay;
 
     private float _chance;
-    private EnemyFacrica _facrica;
+    private EnemyFabrica _fabrica;
     private EnemyType _enemyType;
 
     private void Awake()
     {
-        _facrica = GetComponent<EnemyFacrica>();
+        _fabrica = GetComponent<EnemyFabrica>();
     }
 
     private void Start()
@@ -40,11 +40,11 @@ public class EnemySpawner : MonoBehaviour
         Vector3 randomPosition = new Vector3(Random.Range(-9, 9), Random.Range(-3, 3));
         if (_enemyType == EnemyType.Melee)
         {
-            _facrica.CreateMeleeEnemy(randomPosition);
+            _fabrica.CreateMeleeEnemy(randomPosition);
         }
         if (_enemyType == EnemyType.Ranged)
         { 
-            _facrica.CreateRangedEnemy(randomPosition);
+            _fabrica.CreateRangedEnemy(randomPosition);
         }
         SortingEnemies(_enemyType);
         SetEnemy();

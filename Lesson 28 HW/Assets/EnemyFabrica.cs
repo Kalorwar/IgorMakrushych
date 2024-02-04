@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class EnemyFacrica : MonoBehaviour
+public class EnemyFabrica : MonoBehaviour
 {
     [SerializeField] private Enemy _enemy;
 
