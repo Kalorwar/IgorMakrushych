@@ -25,15 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbdca194-dac4-427c-8408-4017a31cd807" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/EnemyFacrica.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EnemyFacrica.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EnemySpawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EnemySpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Lesson 28 HW/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lesson 28 HW/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Lesson 28 HW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lesson 28 HW/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +39,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/EnemySpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/EnemyFacrica.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyFacrica.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemySpawner.cs" />
       </list>
     </option>
   </component>
@@ -98,6 +91,8 @@
       <option name="presentableId" value="Default" />
       <updated>1707035961582</updated>
       <workItem from="1707035972705" duration="7323000" />
+      <workItem from="1707044511749" duration="149000" />
+      <workItem from="1707149565722" duration="47000" />
     </task>
     <servers />
   </component>
@@ -116,6 +111,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
