@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\User\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\User\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Lesson 34.1.1492095145.00" t="ExcludeRecursive" />
+    <e p="D:\Unity\Lesson 34.1" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Artwork" t="Include">
+          <e p="asteroids" t="Include" />
+          <e p="background" t="Include" />
+          <e p="enemy" t="Include" />
+          <e p="explosion" t="Include" />
+          <e p="flash" t="Include" />
+          <e p="Hit" t="Include" />
+          <e p="music" t="Include" />
+          <e p="player" t="Include" />
+          <e p="shoot" t="Include" />
+          <e p="Sound FX" t="Include" />
+        </e>
+        <e p="Scenes" t="Include" />
+        <e p="Source" t="Include">
+          <e p="Resources" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Asteroid.cs" t="Include" />
+            <e p="AsteroidSpawner.cs" t="Include" />
+            <e p="Enemy.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Lesson 34.1.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
