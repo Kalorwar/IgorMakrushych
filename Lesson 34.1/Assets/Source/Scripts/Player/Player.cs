@@ -3,10 +3,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IShootable, IMovable
 { 
     [SerializeField] private float _health;
     [SerializeField] private float _speed;
+    [SerializeField] private BulletSpawner _bulletSpawner;
     
     private float _maxHealth = 3f;
     private Rigidbody2D _rigidbody;
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
         Move();
+        Shoot();
     }
 
     public void TakeDamage (float amount)
@@ -35,7 +37,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Move()
+    public void Move()
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
@@ -45,16 +47,6 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             _rigidbody.velocity = Vector2.down * _speed;
-        }
-        
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            _rigidbody.velocity = Vector2.right * _speed;
-        }
-        
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            _rigidbody.velocity = Vector2.left * _speed;
         }
 
         if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) &&
@@ -68,5 +60,13 @@ public class Player : MonoBehaviour
     {
         if (_health <= 0)
         Destroy(gameObject);
+    }
+
+    public void Shoot()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _bulletSpawner.CreateBullet();
+        }
     }
 }

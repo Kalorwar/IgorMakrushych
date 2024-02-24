@@ -1,4 +1,7 @@
-﻿public class Asteroid : Enemy
+﻿using System;
+using UnityEngine;
+
+public class Asteroid : Enemy
 {
     public override void Move()
     {

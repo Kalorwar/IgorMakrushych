@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public abstract class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour, IMovable
 {
     [SerializeField] private Player _player;
     [SerializeField] private float _damage;
     [SerializeField] private float _speed;
-    
+
     private Rigidbody2D _rigidbody;
 
     private void Awake()
@@ -24,8 +24,8 @@ public abstract class Enemy : MonoBehaviour
         if (collider.gameObject.TryGetComponent<Player>(out _player))
         {
             _player.TakeDamage(_damage);
-            Destroy(gameObject);
         }
+        Destroy(gameObject);
     }
 
     public virtual void Move()
